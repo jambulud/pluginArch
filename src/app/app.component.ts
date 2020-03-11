@@ -8,8 +8,17 @@ import { Route, Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'pluginArch';
+  extension = 'txt';
   routes: Route[];
   constructor(private router: Router) {
     this.routes = this.router.config;
+  }
+
+  onTxt() {
+    this.extension = 'txt';
+  }
+
+  onJava() {
+    this.extension = 'java';
   }
 }

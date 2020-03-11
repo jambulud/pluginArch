@@ -1,4 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<app-renderer [extension]="extension"></app-renderer>
+<button (click)="onTxt()">.txt</button><button (click)="onJava()">.java</button>
 <div *ngFor="let route of routes">
   <a [routerLink]="route.path">{{route.path}}</a>
 </div>
